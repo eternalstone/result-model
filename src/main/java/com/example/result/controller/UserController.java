@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/user")
 public class UserController {
 
-    @GetMapping()
-    public ResultModel<User> getUser(@RequestParam Long id){
+    @GetMapping(value = {"/{id}","/"})
+    public ResultModel<User> getUser(@PathVariable(required=false) Long id){
         if(id == null){
             return ResultModel.failure("id不能为空",null);
         }
