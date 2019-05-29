@@ -1,0 +1,4 @@
+SpringBoot 注解实现统一返回对象
+1.实现通用统一返回对象及自定义code状态码
+2.实现ResponseResult注解controller类或方法返回统一对象
+3.自定义异常全局捕获返回统一对象
